@@ -65,48 +65,47 @@ tabs.forEach((tab) => {
   });
 });
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close');
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
-modalBtns.forEach((modalBtn,i) => {
-    modalBtn.addEventListener('click', () =>{
-        modal(i)
-    }) 
-})
+const modalViews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalCloses = document.querySelectorAll(".services__modal-close");
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add("active-modal");
+};
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
 modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () =>{
-        modalViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("active-modal");
+    });
+  });
+});
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
+let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
   navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-  pagination: { el: ".swiper-pagination", clickable:true, },
- 
+  pagination: { el: ".swiper-pagination", clickable: true },
 });
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
   loop: true,
-  grabCursor:true,
-  spaceBetween:48,
-  
+  grabCursor: true,
+  spaceBetween: 48,
+
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
-  breakpoints:{
-    568:{
+  breakpoints: {
+    568: {
       slidesPerView: 2,
-    }
-  }
+    },
+  },
 });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
@@ -149,7 +148,6 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 /*==================== DARK LIGHT THEME ====================*/
-
 
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";

@@ -21,7 +21,7 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 60%, 60%);
+  --scroll-thumb-color: hsl(var(--hue-color), 30%, 12%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -80,7 +80,7 @@ body.dark-theme {
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 30%, 12%);
+  --scroll-thumb-color: hsl(var(--hue-color), 57%, 53%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -131,9 +131,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+.logo {width:30%;
+height:30%;}
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 .section__title {
   font-size: var(--h1-font-size);
@@ -149,7 +151,7 @@ img {
 }
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 850px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -475,6 +477,24 @@ img {
 }
 .skills__photoshop {
   width: 85%;
+}
+.skills__tensorflow {
+  width: 70%;
+}
+.skills__keras {
+  width: 60%;
+}
+.skills__seaborn {
+  width: 75%;
+}
+.skills__matplotlib {
+  width: 75%;
+}
+.skills__computer_vision {
+  width: 60%;
+}
+.skills__nlp {
+  width: 50%;
 }
 .skills__close .skills__list {
   height: 0;
