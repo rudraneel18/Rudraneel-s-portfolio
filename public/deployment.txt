@@ -1,2 +1,7 @@
 
  What script should be run before every deploy? npm ci && npm run build
+ run these commands to deploy:
+ git add --all
+ git commit -m ""
+ git push origin master
+ firebase deploy
