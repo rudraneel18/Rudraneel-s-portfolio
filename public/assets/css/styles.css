@@ -18,6 +18,7 @@
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
+  --form-input-color: hsl(var(--hue-color), 80%, 100%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -76,7 +77,8 @@ body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --input-color: hsl(var(--hue-color), 29%, 18%);
+  --form-input-color: hsl(var(--hue-color), 29%, 30%);
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
@@ -816,14 +818,16 @@ height:30%;}
   background-color: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
+  padding-bottom:1rem;
 }
 .contact__label {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
+  
 }
 .contact__input {
   width: 100%;
-  background-color: var(--input-color);
+  background-color: var(--form-input-color);
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -831,6 +835,7 @@ height:30%;}
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
   border-radius: 0.5rem;
+  
 }
 /*==================== FOOTER ====================*/
 .footer {
@@ -882,18 +887,18 @@ height:30%;}
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background-color: wheat;
   opacity: 0.8;
-  padding: 0 0.3rem;
+  padding: .3rem 0.5rem;
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
 }
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  background-color: burlywood;
 }
 .scrollup-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
 }
 /* Show scroll */
