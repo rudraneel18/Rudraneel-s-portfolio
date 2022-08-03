@@ -523,9 +523,13 @@ height:30%;}
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
+  color: var(--body-color);
+  background-color: var(--first-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 .qualification__button:hover {
-  color: var(--first-color);
+  color: var(--title-color);
 }
 .qualification__icon {
   font-size: 1.8rem;
