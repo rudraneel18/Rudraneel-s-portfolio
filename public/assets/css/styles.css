@@ -596,9 +596,9 @@ height:30%;}
 }
 .certificates__icon {
   display: block;
-  font-size: 1.5rem;
-  color: var(--first-color);
+  width: 80px;
   margin-bottom: var(--mb-1);
+
 }
 
 .certificates__title {
