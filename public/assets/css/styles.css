@@ -516,7 +516,7 @@ height:30%;}
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: var(--mb-2);
 }
 .qualification__button {
@@ -527,6 +527,7 @@ height:30%;}
   background-color: var(--first-color);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  margin-left: 1rem;
 }
 .qualification__button:hover {
   color: var(--title-color);
@@ -878,7 +879,6 @@ height:30%;}
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
-  margin-top: var(--mb-3);
 }
 .footer__title,
 .footer__subtitle,
@@ -1127,7 +1127,7 @@ height:30%;}
   column-gap: 2rem;
 }
 .footer__socials{justify-self:flex-end ;}
-.footer__copy{margin-top: 4.5rem;}
+.footer__copy{margin-top: 0rem;}
 }
 /* For large devices */
 @media screen and (min-width:(1024px)) {
