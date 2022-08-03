@@ -250,6 +250,7 @@ height:30%;}
 }
 
 /*==================== HOME ====================*/
+.home{height:90vh}
 .home__container {
   gap: 1rem;
 }
