@@ -1127,7 +1127,7 @@ height:30%;}
   flex-direction: row;
   column-gap: 2rem;
 }
-.footer__socials{justify-self:flex-end ;}
+.footer__socials{justify-self:flex ;}
 .footer__copy{margin-top: 0rem;}
 .certificates__container {
   gap: 1.5rem;
