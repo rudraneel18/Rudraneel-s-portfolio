@@ -377,7 +377,7 @@ height:30%;}
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--mb-2-5);
-  padding-inline: 5rem;
+  padding-inline: var(--mb-2);
 }
 .about__info-title {
   font-size: var(--h2-font-size);
@@ -395,6 +395,7 @@ height:30%;}
 .about__buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 /*==================== SKILLS ====================*/
 .skills__container {
@@ -452,17 +453,15 @@ height:30%;}
   display: block;
   background-color: var(--first-color);
 }
-.skills__html {
+.skills__databricks {
   width: 90%;
 }
-.skills__css {
+.skills__aws {
+  width: 75%;
+}
+
+.skills__gcp {
   width: 80%;
-}
-.skills__html {
-  width: 90%;
-}
-.skills__js {
-  width: 60%;
 }
 .skills__react {
   width: 85%;
@@ -477,34 +476,74 @@ height:30%;}
   width: 90%;
 }
 .skills__python {
-  width: 85%;
+  width: 100%;
 }
-.skills__figma {
+.skills__java {
   width: 90%;
 }
-.skills__sketch {
-  width: 85%;
-}
-.skills__photoshop {
-  width: 85%;
-}
-.skills__tensorflow {
+.skills__c {
   width: 70%;
 }
-.skills__keras {
+.skills__groovy {
+  width: 50%;
+}
+.skills__hadoop {
+  width: 90%;
+}
+.skills__spark {
+  width: 90%;
+}
+.skills__hive {
+  width: 70%;
+}
+.skills__mongodb {
+  width: 90%;
+}
+.skills__kafka {
   width: 60%;
 }
-.skills__seaborn {
-  width: 75%;
+.skills__tensorflow {
+  width: 60%;
 }
-.skills__matplotlib {
+.skills__pytorch {
+  width: 80%;
+}
+.skills__genai {
+  width: 80%;
+}
+.skills__llm {
   width: 75%;
 }
 .skills__computer_vision {
+  width: 70%;
+}
+.skills__transformers {
+  width: 70%;
+}
+.skills__git {
+  width: 90%;
+}
+.skills__bitbucket {
+  width: 70%;
+}
+.skills__jfrog {
+  width: 65%;
+}
+.skills__pip {
+  width: 80%;
+}.skills__conda {
+  width: 90%;
+}.skills__poetry {
+  width: 65%;
+}
+.skills__jenkins {
+  width: 80%;
+}
+.skills__gitworkflows {
   width: 60%;
 }
-.skills__nlp {
-  width: 50%;
+.skills__docker {
+  width: 90%;
 }
 .skills__close .skills__list {
   height: 0;
@@ -546,7 +585,12 @@ height:30%;}
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  
 }
+.qualification__right{
+  text-align: right;
+}
+
 .qualification__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -554,7 +598,7 @@ height:30%;}
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-25);
 }
 .qualification__calendar {
   font-size: var(--smaller-font-size);

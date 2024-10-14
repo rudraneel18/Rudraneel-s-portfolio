@@ -183,3 +183,46 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== MAIL SENDER THEME ====================*/
+
+require('dotenv').config();
+
+const express = require('express');
+const nodemailer = require('nodemailer');
+
+const app = express();
+app.use(express.urlencoded({ extended: true }));
+
+app.post('/send_mail', (req, res) => {
+  const { name, email, project, message } = req.body;
+
+  // Create a transporter using the environment variables
+  let transporter = nodemailer.createTransport({
+    service: 'gmail', // or your preferred email service
+    auth: {
+      user: process.env.MAIL_ID, // your email from the environment
+      pass: process.env.MAIL_WORD // your email password from the environment
+    }
+  });
+
+  // Email options
+  let mailOptions = {
+    from: email,
+    to: 'rishi18neel@gmail.com', // your email
+    subject: `New Contact Message from ${name}`,
+    text: `Name: ${name}\nEmail: ${email}\nProject: ${project}\nMessage: ${message}`
+  };
+
+  // Send the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return res.status(500).send('Failed to send the message. Please try again.');
+    }
+    res.status(200).send('Your message has been sent successfully!');
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
